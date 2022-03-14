@@ -9,7 +9,7 @@ name=str(input("名前を入力してください。:"))
 number=int(input("名簿番号を入力してください。:"))
 
 dt_now = datetime.datetime.now()
-url="https://docs.google.com/forms/d/e/1FAIpQLSckXp1xUTS7ktwprUtXeLYJyfZeZjr6O_3tE-aIqx7xNjrrTg//formResponse"
+url="https://docs.google.com/forms/d/e/1FAIpQLSckXp1xUTS7ktwprUtXeLYJyfZeZjr6O_3tE-aIqx7xNjrrTg/formResponse"
 
 params = {
   'entry.1322117479_year': f'{dt_now.year}',
