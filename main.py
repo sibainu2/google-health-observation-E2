@@ -7,6 +7,8 @@ print("googleフォーム健康観察自動入力\nこの機能はアンケー�
 
 name=str(input("名前を入力してください。:"))
 number=int(input("名簿番号を入力してください。:"))
+sh=int(input("送信時:"))
+sm=int(input("送信分:"))
 
 dt_now = datetime.datetime.now()
 url="https://docs.google.com/forms/d/e/1FAIpQLSckXp1xUTS7ktwprUtXeLYJyfZeZjr6O_3tE-aIqx7xNjrrTg/formResponse"
