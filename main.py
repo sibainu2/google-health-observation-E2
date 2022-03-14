@@ -1,9 +1,7 @@
 import requests
 import datetime
 import time
-#scheduleは標準モジュールではありません。ターミナルよりインストールしてください。
-#pip install schedule
-import schedule
+
 
 print("googleフォーム健康観察自動入力\nこの機能はアンケート入力をサポートする機能です。\n万一、アンケートが未入力、誤解答が発生しても作成者は一切責任をとりません。")
 
@@ -27,7 +25,10 @@ def task():
     r = requests.get(url, params=params)
     print(r.url)
     print(r.status_code)
+    
 while True:
-    schedule.every().day.at("06:30").do(task) 
+    now=datetime.datetime.now()
+    if now.hour==sh and now.minute==sm and now.second ==0:
+        task()
     time.sleep(1)
     
