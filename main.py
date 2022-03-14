@@ -1,5 +1,6 @@
 import requests
 import datetime
+import time
 #scheduleは標準モジュールではありません。ターミナルよりインストールしてください。
 #pip install schedule
 import schedule
@@ -26,5 +27,7 @@ def task():
     r = requests.get(url, params=params)
     print(r.url)
     print(r.status_code)
-
-schedule.every().day.at("6:30").do(task)
+while True:
+    schedule.every().day.at("06:30").do(task) 
+    time.sleep(1)
+    
