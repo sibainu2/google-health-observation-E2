@@ -14,13 +14,13 @@ dt_now = datetime.datetime.now()
 url="https://docs.google.com/forms/d/e/1FAIpQLSckXp1xUTS7ktwprUtXeLYJyfZeZjr6O_3tE-aIqx7xNjrrTg/formResponse"
 
 params = {
-  'entry.1322117479_year': f'{dt_now.year}',
-  'entry.1322117479_month': f'{dt_now.month}',
-  'entry.1322117479_day': f'{dt_now.day}',
-  'entry.1571997150': f'{number}',
-  'entry.545271842': f'{name}',
-  'entry.71655832': '36.0度～36.4度',
-  'entry.1288998435': '特になし',
+  'entry.246484525_year': f'{dt_now.year}',
+  'entry.246484525_month': f'{dt_now.month}',
+  'entry.246484525_day': f'{dt_now.day}',
+  'entry.55904372': f'{number}',
+  'entry.1112197045': f'{name}',
+  'entry.401148155': '36.5度～36.9度',
+  'entry.1258887026': '特になし',
 }
 
 def task():
