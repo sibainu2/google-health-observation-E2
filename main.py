@@ -11,7 +11,7 @@ sh=int(input("送信時:"))
 sm=int(input("送信分:"))
 
 dt_now = datetime.datetime.now()
-url="https://docs.google.com/forms/d/e/1FAIpQLSckXp1xUTS7ktwprUtXeLYJyfZeZjr6O_3tE-aIqx7xNjrrTg/formResponse"
+url="https://docs.google.com/forms/d/e/1FAIpQLSckXp1xUTS7ktwprUtXeLYJyfZeZjr6O_3tE-aIqx7xNjr/formResponse"
 
 params = {
   'entry.246484525_year': f'{dt_now.year}',
